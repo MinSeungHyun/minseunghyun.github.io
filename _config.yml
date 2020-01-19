@@ -20,7 +20,7 @@ title                    : "승현의 개발 블로그"
 title_separator          : "|"
 subtitle                 : 
 name                     : "민승현"
-description              : "승현의 개발 블로그"
+description              : "주로 안드로이드 개발에 관한 글과 나의 경험들을 올리는 블로그"
 url                      : "https://minseunghyun.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "MinSeungHyun/MinSeungHyun.github.io"
@@ -77,10 +77,10 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : "hFNFpdYgviuudsHRN0vtwLO0M0ZDhHNhHZ5dTxhLpks"
 bing_site_verification   :
 yandex_site_verification :
-naver_site_verification  :
+naver_site_verification  : "d4a742d62b6ef49c7a378c409b8ba5771d362ead"
 
 # Social Sharing
 twitter:
