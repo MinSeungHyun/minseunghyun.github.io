@@ -60,7 +60,7 @@ layout: default
 
       {% if page.share %}{% include social-share.html %}{% endif %}
 
-      {% include post_pagination.html %}
+      {%- comment -%} {% include post_pagination.html %} {%- endcomment -%}
     </div>
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
