@@ -293,6 +293,8 @@ defaults:
       comments: true
       share: true
       related: true
+      toc_label: "목차"
+      toc_sticky: true
   - scope:
       path: "_pages"
       type: pages
