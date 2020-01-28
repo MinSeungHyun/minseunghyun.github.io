@@ -279,6 +279,11 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  achievement:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -295,3 +300,9 @@ defaults:
       related: true
       toc_label: "목차"
       toc_sticky: true
+  # _achievement
+  - scope:
+      path: ""
+      type: achievement
+    values:
+      layout: single
