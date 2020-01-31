@@ -4,13 +4,12 @@
 
 .masthead {
   position: relative;
-  border-bottom: 1px solid $border-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
-  box-shadow: 0 0px 4px rgba(0,0,0,0.10), 0 0px 4px rgba(0,0,0,0.10);
+  box-shadow: 0 0px 6px rgba(0,0,0,0.10), 0 0px 6px rgba(0,0,0,0.10);
 
   &__inner-wrap {
     @include clearfix;
@@ -52,6 +51,8 @@
   align-self: center;
   font-weight: bold;
   z-index: 20;
+  font-family: "KCC-eunyoung";
+  font-size: 1.5em;
 }
 
 .site-subtitle {
@@ -79,6 +80,8 @@
     padding: 0;
     clear: both;
     list-style-type: none;
+    font-weight: 500;
+    font-size: 0.8em;
   }
 }
 
