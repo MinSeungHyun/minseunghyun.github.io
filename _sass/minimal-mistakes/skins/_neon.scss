@@ -2,7 +2,9 @@
    Neon skin
    ========================================================================== */
 
+
 /* Colors */
+
 $background-color: #141010 !default;
 $text-color: #fff6fb !default;
 $primary-color: #f21368 !default;
@@ -19,6 +21,7 @@ $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 
 /* neon syntax highlighting (base16) */
+
 $base00: #ffffff !default;
 $base01: #e0e0e0 !default;
 $base02: #d0d0d0 !default;
@@ -35,23 +38,23 @@ $base0c: #1faaaa !default;
 $base0d: #3777e6 !default;
 $base0e: #ad00a1 !default;
 $base0f: #cc6633 !default;
-
 .author__urls.social-icons .svg-inline--fa,
 .page__footer-follow .social-icons .svg-inline--fa {
-  color: inherit;
+    color: inherit;
 }
 
-/* next/previous buttons */
-.pagination--pager {
-  color: $text-color;
-  background-color: $primary-color;
-  border-color: transparent;
 
-  &:visited {
+/* next/previous buttons */
+
+.pagination--pager {
     color: $text-color;
-  }
+    background-color: $primary-color;
+    border-color: transparent;
+    &:visited {
+        color: $text-color;
+    }
 }
 
 .ais-search-box .ais-search-box--input {
-  background-color: $form-background-color;
+    background-color: $form-background-color;
 }

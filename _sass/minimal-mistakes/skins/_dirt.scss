@@ -2,7 +2,9 @@
    Dirt skin
    ========================================================================== */
 
+
 /* Colors */
+
 $background-color: #f3f3f3 !default;
 $text-color: #343434 !default;
 $muted-text-color: #8e8b82 !default;
@@ -15,6 +17,7 @@ $masthead-link-color-hover: $text-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
 /* dirt syntax highlighting (base16) */
+
 $base00: #231e18 !default;
 $base01: #302b25 !default;
 $base02: #48413a !default;

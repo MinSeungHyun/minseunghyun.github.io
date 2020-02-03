@@ -2,7 +2,9 @@
    Sunrise skin
    ========================================================================== */
 
+
 /* Colors */
+
 $dark-gray: #0e2431 !default;
 $background-color: #e8d5b7 !default;
 $text-color: #000 !default;
@@ -21,6 +23,7 @@ $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 
 /* sunrise syntax highlighting (base16) */
+
 $base00: #1d1f21 !default;
 $base01: #282a2e !default;
 $base02: #373b41 !default;
@@ -37,8 +40,7 @@ $base0c: #8abeb7 !default;
 $base0d: #81a2be !default;
 $base0e: #b294bb !default;
 $base0f: #a3685a !default;
-
 .author__urls.social-icons .fa,
 .page__footer-follow .social-icons .svg-inline--fa {
-  color: inherit;
+    color: inherit;
 }

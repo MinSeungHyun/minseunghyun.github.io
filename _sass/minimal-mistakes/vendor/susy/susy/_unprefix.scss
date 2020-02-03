@@ -1,7 +1,5 @@
 // Unprefix Susy
 // =============
-
-
 // Span
 // ----
 /// Un-prefixed alias for `susy-span`
@@ -12,13 +10,9 @@
 ///
 /// @param {list} $span
 /// @param {map} $config [()]
-@function span(
-  $span,
-  $config: ()
-) {
-  @return susy-span($span, $config);
+@function span( $span, $config: ()) {
+    @return susy-span($span, $config);
 }
-
 
 // Gutter
 // ------
@@ -30,13 +24,9 @@
 ///
 /// @param {integer | list} $context [null] -
 /// @param {map} $config [()]
-@function gutter(
-  $context: susy-get('columns'),
-  $config: ()
-) {
-  @return susy-gutter($context, $config);
+@function gutter( $context: susy-get('columns'), $config: ()) {
+    @return susy-gutter($context, $config);
 }
-
 
 // Slice
 // -----
@@ -48,9 +38,6 @@
 ///
 /// @param {list} $span
 /// @param {map} $config [()]
-@function slice(
-  $span,
-  $config: ()
-) {
-  @return susy-slice($span, $config);
+@function slice( $span, $config: ()) {
+    @return susy-slice($span, $config);
 }
