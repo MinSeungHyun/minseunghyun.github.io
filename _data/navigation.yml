@@ -1,5 +1,5 @@
 main:
     - title: "Category"
       url: /categories/
-    - title: "Achievement"
-      url: /achievement/
+    - title: "Archive"
+      url: /archive/
