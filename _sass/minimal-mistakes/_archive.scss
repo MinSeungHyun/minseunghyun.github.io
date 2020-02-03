@@ -20,8 +20,12 @@
 .archive__item {
     position: relative;
     a {
+        text-decoration: none;
         position: relative;
         z-index: 10;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     a[rel="permalink"] {
         position: static;
