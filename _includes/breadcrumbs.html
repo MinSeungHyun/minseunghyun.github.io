@@ -13,7 +13,7 @@
 {% endif %}
 
 <nav class="breadcrumbs">
-  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+  <ol {% if page.layout == "portfolio" %}class="wide"{% endif %} itemscope itemtype="https://schema.org/BreadcrumbList">
     {% assign crumbs = page.url | split: '/' %}
     {% assign i = 1 %}
     {% for crumb in crumbs offset: 1 %}

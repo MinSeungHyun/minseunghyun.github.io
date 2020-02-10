@@ -283,7 +283,7 @@ compress_html:
 collections:
   archive:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:title/
 
 # Defaults
 defaults:

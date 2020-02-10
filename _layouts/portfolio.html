@@ -1,0 +1,13 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<div class="portfolio_grid">
+  {% assign entries = site[page.collection]%}
+
+  {%- for post in entries reversed -%}
+    {% include portfolio-card.html %}
+  {% endfor %}
+</div>
