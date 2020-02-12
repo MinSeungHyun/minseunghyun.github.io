@@ -33,10 +33,14 @@
       {% endif %}
     </h2>
     <p class="portfolio_date">{{ post.date_from }}{% if post.date_to %} ~ {{ post.date_to }}{% endif %}</p>
-    {% if post.sidebar %}<div class="portfolio_divider"></div>{% endif %}
-    {% for item in post.sidebar %}
-      <p class="portfolio_info">{% if item.title %}{{ item.title }} : {% endif %}<strong>{{ item.text }}</strong></p>
-    {% endfor %}
+    <div class="portfolio_divider"></div>
+    {% if post.sidebar %}
+      {% for item in post.sidebar %}
+        <p class="portfolio_info">{% if item.title %}{{ item.title }} : {% endif %}<strong>{{ item.text }}</strong></p>
+      {% endfor %}
+    {% else %}
+      <p class="portfolio_info"></p>
+    {% endif %}
     <div class="portfolio_types">
       {% for typeIndex in post.types %}
         {% assign type = types[typeIndex] %}
