@@ -61,7 +61,7 @@ $content-side-margin: 20px;
     }
     .archive__item-title {
         margin: 8px $content-side-margin;
-        font-size: 1.3em;
+        font-size: 1.1em;
         a {
             &:hover {
                 text-decoration: none;
@@ -95,6 +95,10 @@ $content-side-margin: 20px;
         font-size: $content-font-size;
         strong {
             font-weight: 400;
+        }
+        a {
+            text-decoration: underline;
+            z-index: 0;
         }
     }
     .portfolio_types {

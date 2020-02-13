@@ -36,7 +36,11 @@
     <div class="portfolio_divider"></div>
     {% if post.sidebar %}
       {% for item in post.sidebar %}
-        <p class="portfolio_info">{% if item.title %}{{ item.title }} : {% endif %}<strong>{{ item.text }}</strong></p>
+        {% if item.link %}
+          <p class="portfolio_info"><a target="_blank" href="{{ item.link }}">{{ item.title }}</a></p>
+        {% else %}
+          <p class="portfolio_info">{% if item.title %}{{ item.title }} : {% endif %}<strong>{{ item.text }}</strong></p>
+        {% endif %}
       {% endfor %}
     {% else %}
       <p class="portfolio_info"></p>
