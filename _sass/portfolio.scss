@@ -86,11 +86,11 @@ $content-side-margin: 20px;
     .portfolio_divider {
         height: 1px;
         background-color: #00000018;
-        margin: 24px 16px;
+        margin: 16px 16px;
     }
     .portfolio_info {
-        flex: 1 1 auto;
-        margin: 0 $content-side-margin;
+        margin: 0px $content-side-margin;
+        margin-bottom: 2px;
         color: $content-font-color;
         font-size: $content-font-size;
         strong {
@@ -100,6 +100,9 @@ $content-side-margin: 20px;
             text-decoration: underline;
             z-index: 0;
         }
+    }
+    .portfolio_space {
+        flex: 1 1 auto;
     }
     .portfolio_types {
         margin: 0 $content-side-margin;
