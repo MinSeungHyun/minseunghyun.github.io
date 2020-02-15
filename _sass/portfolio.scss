@@ -112,3 +112,37 @@ $content-side-margin: 20px;
         }
     }
 }
+
+.portfolio_content {
+    figure {
+        margin: 0 0;
+    }
+    .feature__wrapper {
+        border-bottom: none;
+        margin-bottom: 0;
+        .feature__item--left .archive__item-teaser {
+            margin-bottom: 1em;
+        }
+    }
+}
+
+.portfolio_sidebar_link {
+    font-size: 0.65em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.portfolio_sidebar_divider {
+    height: 1px;
+    background-color: #00000018;
+    margin: 16px 0;
+}
+
+.portfolio_pagination {
+    margin-top: 1em !important;
+    padding-top: 0 !important;
+    border-top: none !important;
+    a {
+        padding: 0.5em;
+    }
+}

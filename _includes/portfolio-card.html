@@ -32,7 +32,7 @@
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    <p class="portfolio_date">{{ post.date_from }}{% if post.date_to %} ~ {{ post.date_to }}{% endif %}</p>
+    <p class="portfolio_date">{{ post.date_from | date: "%Y.%m.%d"}}{% if post.date_to %} ~ {{ post.date_to | date: "%Y.%m.%d" }}{% endif %}</p>
     <div class="portfolio_divider"></div>
     {% if post.sidebar %}
       {% for item in post.sidebar %}

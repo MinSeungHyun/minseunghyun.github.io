@@ -305,4 +305,5 @@ defaults:
       path: ""
       type: archive
     values:
-      layout: single
+      layout: single-portfolio
+      comments: true
