@@ -18,7 +18,7 @@
       <div class="archive__item">
         {% if f.image_path %}
           <div class="archive__item-teaser">
-            <img src=
+            <img class="lozad" data-src=
               {% if f.image_path contains "://" %}
                 "{{ f.image_path }}"
               {% else %}

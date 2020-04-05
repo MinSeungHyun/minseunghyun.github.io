@@ -1,5 +1,5 @@
 <figure class="{{ include.class }}">
-  <img src=
+  <img class="lozad" data-src=
     {% if include.image_path contains "://" %}
       "{{ include.image_path }}"
     {% else %}

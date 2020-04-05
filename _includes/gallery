@@ -27,7 +27,7 @@
         {% endif %}
         {% if img.title %}title="{{ img.title }}"{% endif %}
       >
-        <img src=
+        <img class="lozad" data-src=
           {% if img.image_path contains "://" %}
             "{{ img.image_path }}"
           {% else %}
@@ -36,7 +36,7 @@
           alt="{% if img.alt %}{{ img.alt }}{% endif %}">
       </a>
     {% else %}
-      <img src=
+      <img class="lozad" data-src=
         {% if img.image_path contains "://" %}
           "{{ img.image_path }}"
         {% else %}
