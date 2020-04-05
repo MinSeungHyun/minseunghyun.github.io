@@ -297,7 +297,7 @@ defaults:
       read_time: false
       comments: true
       share: false
-      related: true
+      related: false
       toc_label: "목차"
       toc_sticky: true
   # _archive

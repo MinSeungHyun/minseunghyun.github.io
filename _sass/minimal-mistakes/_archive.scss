@@ -1,6 +1,7 @@
 /* ==========================================================================
    ARCHIVE
    ========================================================================== */
+$content-padding: 1.1rem;
 
 .archive {
     margin-top: 1em;
@@ -19,13 +20,18 @@
 
 .archive__item {
     position: relative;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: 0.1s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 2px;
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        transition: 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
     a {
         text-decoration: none;
         position: relative;
         z-index: 10;
-        &:hover {
-            text-decoration: underline;
-        }
     }
     a[rel="permalink"] {
         position: static;
@@ -44,7 +50,13 @@
 }
 
 .archive__item-title {
-    margin-bottom: 0.25em;
+    padding-top: $content-padding;
+    padding-left: $content-padding;
+    padding-right: $content-padding;
+    margin-top: 1em;
+    margin-bottom: 0.8em;
+    font-size: 1.2em;
+    font-weight: 500;
     font-family: $sans-serif-narrow;
     line-height: initial;
     overflow: hidden;
@@ -73,6 +85,9 @@
 }
 
 .archive__item-excerpt {
+    padding-bottom: $content-padding;
+    padding-left: $content-padding;
+    padding-right: $content-padding;
     margin-top: 0;
     font-size: $type-size-6;
     &+p {
