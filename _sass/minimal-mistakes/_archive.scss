@@ -23,7 +23,7 @@ $content-padding: 1.1rem;
     background: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: 0.1s cubic-bezier(0.25, 0.8, 0.25, 1);
-    border-radius: 2px;
+    border-radius: $border-radius;
     &:hover {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
         transition: 1s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -50,11 +50,12 @@ $content-padding: 1.1rem;
 }
 
 .archive__item-title {
-    padding-top: $content-padding;
+    padding-top: $content-padding - 0.3rem;
+    padding-bottom: 0.3rem;
     padding-left: $content-padding;
     padding-right: $content-padding;
-    margin-top: 1em;
-    margin-bottom: 0.8em;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 1.2em;
     font-weight: 500;
     font-family: $sans-serif-narrow;
@@ -89,7 +90,7 @@ $content-padding: 1.1rem;
     padding-left: $content-padding;
     padding-right: $content-padding;
     margin-top: 0;
-    font-size: $type-size-6;
+    font-size: 0.75em;
     &+p {
         text-indent: 0;
     }
@@ -99,6 +100,7 @@ $content-padding: 1.1rem;
 }
 
 .archive__item-teaser {
+    max-height: 300px;
     position: relative;
     border-radius: $border-radius;
     overflow: hidden;
