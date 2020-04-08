@@ -20,7 +20,7 @@ title                    : "승현의 개발 블로그"
 title_separator          : "|"
 subtitle                 : 
 name                     : "민승현"
-description              : "주로 안드로이드에 관한 글을 올리고, 저의 기록들을 보관하는 블로그입니다."
+description              : "안드로이드와 관련된 글을 올리고, 저의 기록을 저장하는 블로그입니다."
 url                      : "https://minseunghyun.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "MinSeungHyun/MinSeungHyun.github.io"
