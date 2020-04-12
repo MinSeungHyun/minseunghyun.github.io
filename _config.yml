@@ -298,7 +298,7 @@ defaults:
       comments: true
       share: false
       related: false
-      toc_label: "목차"
+      toc_label: "Contents"
       toc_sticky: true
   # _archive
   - scope:
