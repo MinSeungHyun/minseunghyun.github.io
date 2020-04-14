@@ -1,3 +1,5 @@
-<video class="align-center lozad" autoplay loop muted style="max-width: 100%">
+{% assign max_width = include.max_width %}
+
+<video class="align-center lozad" autoplay loop muted style="display: unset; max-width: {% if max_width %}{{ max_width}} {% else %}100%{% endif %}">
   <source data-src="{{ include.src }}" type="video/mp4">
 </video>
