@@ -56,6 +56,15 @@ layout: default
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
         {% endif %}
+        <p style="margin-top: 4px"><strong><i class="fab fa-fw fa-github" aria-hidden="true"></i> 공헌하기</strong></p>
+        <style type="text/css">
+          .repo-card .content p{
+            font: unset;
+          }
+        </style>
+        <div class="github-card" data-github="MinSeungHyun/Blog" data-width="100%"></div>
+        <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+        <script>document.getElementById("ghcard-MinSeungHyun-6").contentDocument.querySelector('p').style.font = "unset"}</script>
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
