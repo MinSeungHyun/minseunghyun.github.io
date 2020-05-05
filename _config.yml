@@ -20,7 +20,7 @@ title: 'seunghyun.in'
 title_separator: '|'
 subtitle: '.in'
 name: '민승현'
-description: '안드로이드와 관련된 글을 올리고, 저의 기록을 저장하는 블로그입니다.'
+description: '새로움을 추구하는 안드로이드 개발자 민승현입니다.'
 url: 'https://minseunghyun.github.io'
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: 'MinSeungHyun/MinSeungHyun.github.io'
@@ -89,7 +89,7 @@ facebook:
   username:
   app_id:
   publisher:
-og_image: # Open Graph/Twitter default site image
+og_image: '/assets/images/site_image.png'
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
