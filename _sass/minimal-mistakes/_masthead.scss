@@ -9,7 +9,7 @@
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
-  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1), 0 0px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
   &__inner-wrap {
     @include clearfix;
     margin-left: auto;
