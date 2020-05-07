@@ -3,154 +3,154 @@ $content-font-color: #575757;
 $content-font-size: 0.7em;
 $content-side-margin: 20px;
 .wide {
-    @include breakpoint($large) {
-        width: 90% !important;
-    }
+  @include breakpoint($large) {
+    width: 90% !important;
+  }
 }
 
 .portfolio_grid {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio_card {
-    background-color: white;
-    margin-bottom: 2em;
-    p {
-        font-weight: 300;
+  background-color: white;
+  margin-bottom: 2em;
+  p {
+    font-weight: 300;
+  }
+  @include breakpoint($small) {
+    width: span(5 of 10);
+    &:nth-child(2n + 1) {
+      clear: both;
+      margin-left: 0;
     }
-    @include breakpoint($small) {
-        width: span(5 of 10);
-        &:nth-child(2n + 1) {
-            clear: both;
-            margin-left: 0;
-        }
-        &:nth-child(2n + 2) {
-            clear: none;
-            margin-left: gutter(of 10);
-        }
+    &:nth-child(2n + 2) {
+      clear: none;
+      margin-left: gutter(of 10);
     }
+  }
+  @include breakpoint($medium) {
+    margin-left: 0;
+    margin-right: 0;
+    width: span(3 of 9);
+    &:nth-child(3n + 1) {
+      clear: both;
+      margin-left: 0;
+    }
+    &:nth-child(3n + 2) {
+      clear: none;
+      margin-left: gutter(1 of 9);
+    }
+    &:nth-child(3n + 3) {
+      clear: none;
+      margin-left: gutter(1 of 9);
+    }
+  }
+  .archive__item {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: $border-radius;
+    &:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      transition: 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+  }
+  .archive__item-title {
+    padding-top: unset;
+    padding-bottom: unset;
+    padding-left: unset;
+    padding-right: unset;
+    margin: 8px $content-side-margin;
+    font-weight: bold;
+    font-size: 1.1em;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .archive__item-excerpt {
+    display: none;
     @include breakpoint($medium) {
-        margin-left: 0;
-        margin-right: 0;
-        width: span(3 of 9);
-        &:nth-child(3n + 1) {
-            clear: both;
-            margin-left: 0;
-        }
-        &:nth-child(3n + 2) {
-            clear: none;
-            margin-left: gutter(1 of 9);
-        }
-        &:nth-child(3n + 3) {
-            clear: none;
-            margin-left: gutter(1 of 9);
-        }
+      display: block;
+      font-size: $type-size-6;
     }
-    .archive__item {
-        height: 100%;
-        display: flex;
-        flex-flow: column;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        border-radius: $border-radius;
-        &:hover {
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-            transition: 1s cubic-bezier(0.25, 0.8, 0.25, 1);
-        }
+  }
+  .archive__item-teaser {
+    border-radius: $border-radius $border-radius 0 0;
+  }
+  .portfolio_date {
+    margin: 0 $content-side-margin;
+    color: $content-font-color;
+    font-size: $content-font-size;
+  }
+  .portfolio_divider {
+    height: 1px;
+    background-color: #00000018;
+    margin: 16px 16px;
+  }
+  .portfolio_info {
+    margin: 0px $content-side-margin;
+    margin-bottom: 2px;
+    color: $content-font-color;
+    font-size: $content-font-size;
+    strong {
+      font-weight: 400;
     }
-    .archive__item-title {
-        padding-top: unset;
-        padding-bottom: unset;
-        padding-left: unset;
-        padding-right: unset;
-        margin: 8px $content-side-margin;
-        font-weight: bold;
-        font-size: 1.1em;
-        a {
-            &:hover {
-                text-decoration: none;
-            }
-        }
+    a {
+      text-decoration: underline;
+      z-index: 0;
     }
-    .archive__item-excerpt {
-        display: none;
-        @include breakpoint($medium) {
-            display: block;
-            font-size: $type-size-6;
-        }
+  }
+  .portfolio_space {
+    flex: 1 1 auto;
+  }
+  .portfolio_types {
+    margin: 0 $content-side-margin;
+    margin-top: 40px;
+    padding-bottom: 12px;
+    text-align: end;
+    p {
+      font-size: ($content-font-size - 0.1em);
+      display: inline;
     }
-    .archive__item-teaser {
-        border-radius: $border-radius $border-radius 0 0;
-    }
-    .portfolio_date {
-        margin: 0 $content-side-margin;
-        color: $content-font-color;
-        font-size: $content-font-size;
-    }
-    .portfolio_divider {
-        height: 1px;
-        background-color: #00000018;
-        margin: 16px 16px;
-    }
-    .portfolio_info {
-        margin: 0px $content-side-margin;
-        margin-bottom: 2px;
-        color: $content-font-color;
-        font-size: $content-font-size;
-        strong {
-            font-weight: 400;
-        }
-        a {
-            text-decoration: underline;
-            z-index: 0;
-        }
-    }
-    .portfolio_space {
-        flex: 1 1 auto;
-    }
-    .portfolio_types {
-        margin: 0 $content-side-margin;
-        margin-top: 40px;
-        padding-bottom: 12px;
-        text-align: end;
-        p {
-            font-size: ($content-font-size - 0.1em);
-            display: inline;
-        }
-    }
+  }
 }
 
 .portfolio_content {
-    figure {
-        margin: 0 0;
+  figure {
+    margin: 0 0;
+  }
+  .feature__wrapper {
+    border-bottom: none;
+    margin-bottom: 0;
+    .feature__item--left .archive__item-teaser {
+      margin-bottom: 1em;
     }
-    .feature__wrapper {
-        border-bottom: none;
-        margin-bottom: 0;
-        .feature__item--left .archive__item-teaser {
-            margin-bottom: 1em;
-        }
-    }
+  }
 }
 
 .portfolio_sidebar_link {
-    font-size: 0.65em;
-    margin-top: 0;
-    margin-bottom: 0.5em;
+  font-size: 0.65em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
 
 .portfolio_sidebar_divider {
-    height: 1px;
-    background-color: #00000018;
-    margin: 16px 0;
+  height: 1px;
+  background-color: #00000018;
+  margin: 16px 0;
 }
 
 .portfolio_pagination {
-    margin-top: 1em !important;
-    padding-top: 0 !important;
-    border-top: none !important;
-    a {
-        padding: 0.5em;
-    }
+  margin-top: 1em !important;
+  padding-top: 0 !important;
+  border-top: none !important;
+  a {
+    padding: 0.5em;
+  }
 }
