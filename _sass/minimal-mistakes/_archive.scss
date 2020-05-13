@@ -154,8 +154,18 @@ $content-padding: 1.1rem;
   }
 }
 
+.grid__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .grid__item {
   margin-bottom: 2em;
+  .archive__item {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+  }
   @include breakpoint($small) {
     float: left;
     width: span(5 of 10);
@@ -202,11 +212,7 @@ $content-padding: 1.1rem;
     font-size: $type-size-5;
   }
   .archive__item-excerpt {
-    display: none;
-    @include breakpoint($medium) {
-      display: block;
-      font-size: $type-size-6;
-    }
+    font-size: $type-size-6;
   }
   .archive__item-teaser {
     @include breakpoint($small) {
