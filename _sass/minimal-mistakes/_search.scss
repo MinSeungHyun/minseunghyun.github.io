@@ -9,18 +9,18 @@
 }
 
 .search__toggle {
-  margin-left: 1rem;
+  margin-left: 0.3rem;
   margin-right: 1rem;
   height: $nav-toggle-height;
-  border: 0;
+  background: none;
+  border: none;
   outline: none;
-  color: $primary-color;
   background-color: transparent;
-  cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  &:hover {
-    color: mix(#000, $primary-color, 25%);
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    color: inherit;
   }
 }
 
@@ -81,12 +81,6 @@
   }
   .archive__item {
     margin-bottom: 2em;
-    @include breakpoint($large) {
-      width: 75%;
-    }
-    @include breakpoint($x-large) {
-      width: 50%;
-    }
   }
   .archive__item-title {
     margin-top: 0;
