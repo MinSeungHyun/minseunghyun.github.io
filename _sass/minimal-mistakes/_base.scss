@@ -142,6 +142,8 @@ a {
 
 button:focus {
   @extend %tab-focus;
+  border: none;
+  outline: none;
 }
 
 /* code */
