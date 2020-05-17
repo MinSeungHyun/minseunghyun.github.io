@@ -2,14 +2,12 @@
    MASTHEAD
    ========================================================================== */
 
-$scroll-transition: 0.5s ease-in-out;
-
 .masthead {
   position: fixed;
   width: 100%;
   top: 0;
   background: $background-color;
-  transition: $scroll-transition;
+  transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
@@ -41,7 +39,6 @@ $scroll-transition: 0.5s ease-in-out;
 }
 
 .masthead_scroll {
-  transition: $scroll-transition;
   background: white;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
