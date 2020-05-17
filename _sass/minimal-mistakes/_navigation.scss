@@ -167,6 +167,7 @@
     margin: 0 1rem;
     color: $masthead-link-color;
     text-decoration: none;
+    font-weight: 300;
     &:hover {
       color: $masthead-link-color-hover;
     }
@@ -175,6 +176,7 @@
       margin-right: 0.5rem;
     }
     &.site-title {
+      font-weight: 500;
       margin-left: 0;
     }
   }
@@ -211,17 +213,7 @@
         left: 0;
         bottom: 0;
         height: 1px;
-        background: $primary-color;
         width: 100%;
-        -webkit-transition: $global-transition;
-        transition: $global-transition;
-        -webkit-transform: scaleX(0) translate3d(0, 0, 0);
-        transform: scaleX(0) translate3d(0, 0, 0); // hide
-      }
-      &:hover:before {
-        -webkit-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-        transform: scaleX(1); // reveal
       }
     }
   }
