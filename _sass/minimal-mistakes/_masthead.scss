@@ -2,8 +2,14 @@
    MASTHEAD
    ========================================================================== */
 
+$scroll-transition: 0.5s ease-in-out;
+
 .masthead {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: $background-color;
+  transition: $scroll-transition;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
@@ -32,6 +38,12 @@
       text-decoration: none;
     }
   }
+}
+
+.masthead_scroll {
+  transition: $scroll-transition;
+  background: white;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
 
 .site-logo img {
