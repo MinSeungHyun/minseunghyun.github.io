@@ -324,10 +324,10 @@ body:hover .visually-hidden button {
     transition: 0.3s;
   }
   &:before {
-    top: (-2 * $navicon-height);
+    top: (-3.5 * $navicon-height);
   }
   &:after {
-    bottom: (-2 * $navicon-height);
+    bottom: (-3.5 * $navicon-height);
   }
 }
 
@@ -355,11 +355,6 @@ body:hover .visually-hidden button {
 }
 
 .greedy-nav__toggle:hover {
-  .navicon,
-  .navicon:before,
-  .navicon:after {
-    background: mix(#000, $primary-color, 25%);
-  }
   &.close {
     .navicon {
       background: transparent;
