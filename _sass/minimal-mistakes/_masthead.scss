@@ -2,17 +2,21 @@
    MASTHEAD
    ========================================================================== */
 
+$masthead-background-alpha: 0.8;
+
 .masthead {
   position: fixed;
   width: 100%;
   top: 0;
-  background: $background-color;
+  background: rgba($background-color, $masthead-background-alpha);
   transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   &__inner-wrap {
     @include clearfix;
     margin-left: auto;
@@ -39,7 +43,7 @@
 }
 
 .masthead_scroll {
-  background: white;
+  background: rgba(#ffffff, $masthead-background-alpha);
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
 
