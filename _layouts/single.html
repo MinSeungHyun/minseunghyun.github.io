@@ -72,16 +72,19 @@ layout: default
       {%- comment -%} {% include post_pagination.html %} {%- endcomment -%}
     </div>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Display ad (horizontal) -->
-    <ins class="adsbygoogle"
-        data-ad-client="ca-pub-5515754850171812"
-        data-ad-slot="6080479653"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    <div style="display: inline-block; width: 100%;">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Display ad (horizontal) -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-5515754850171812"
+          data-ad-slot="6080479653"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
       {% include comments.html %}
