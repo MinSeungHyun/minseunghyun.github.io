@@ -20,7 +20,7 @@ title: 'seunghyun.in'
 title_separator: '|'
 subtitle: '.in'
 name: '민승현'
-description: '새로움을 추구하는 안드로이드 개발자 민승현입니다.'
+description: '누구나 할 수 있는 것으로 누구나 할 수 없는 것을 하다. 안드로이드 개발자 민승현입니다.'
 url: 'https://minseunghyun.github.io'
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: 'MinSeungHyun/MinSeungHyun.github.io'
@@ -108,7 +108,7 @@ analytics:
 author:
   name: 'Min Seung-hyun'
   avatar: '/assets/images/my_name.png'
-  bio: '새로움을 추구하는 안드로이드 개발자 민승현입니다.'
+  bio: '누구나 할 수 있는 것으로 누구나 할 수 없는 것을 하다. <br>안드로이드 개발자 민승현입니다.'
   location: '대한민국'
   email: # "asdf014563@naver.com"
   links:
