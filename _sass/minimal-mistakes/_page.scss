@@ -502,3 +502,19 @@ body {
     }
   }
 }
+
+.fake-id {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top: calc(-42px - 1.5em);
+  @include breakpoint($medium-wide) {
+    top: calc(-47px - 1.5em);
+  }
+  @include breakpoint($large) {
+    top: calc(-52px - 1.5em);
+  }
+  @include breakpoint($x-large) {
+    top: calc(-57px - 1.5em);
+  }
+}

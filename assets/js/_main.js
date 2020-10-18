@@ -2,6 +2,26 @@
    jQuery plugin settings and other scripts
    ========================================================================== */
 
+$('.page__content')
+  .find('h1, h2, h3, h4, h5, h6')
+  .each(function () {
+    var id = $(this).attr('id');
+    if (id) {
+      var anchor = document.createElement('a');
+      anchor.className = 'header-link';
+      anchor.href = '#' + id;
+      anchor.innerHTML = '<span class="sr-only">Permalink</span><i class="fa fa-link"></i>';
+      anchor.title = 'Permalink';
+      $(this).append(anchor);
+
+      var fakeId = document.createElement('div');
+      fakeId.id = id;
+      fakeId.className = 'fake-id';
+      $(this).append(fakeId);
+      this.id = '';
+    }
+  });
+
 jQuery(function () {
   // FitVids init
   $('#main').fitVids();
@@ -53,13 +73,11 @@ jQuery(function () {
     }, 400);
   });
 
-  // Smooth scrolling
-  var scroll = new SmoothScroll('a[href*="#"]', {
-    offset: 20,
-    speed: 400,
-    speedAsDuration: true,
-    durationMax: 500,
-  });
+  // // Smooth scrolling
+  // $(document).on('click', 'a[href*="#"]', function (event) {
+  //   event.preventDefault();
+  //   $('html, body').animate({ scrollTop: $($.attr(this, 'href')).offset().top }, 500);
+  // });
 
   // Gumshoe scroll spy init
   if ($('nav.toc').length > 0) {
@@ -116,28 +134,17 @@ jQuery(function () {
     midClick: true, // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
-  // Add anchors for headings
-  $('.page__content')
-    .find('h1, h2, h3, h4, h5, h6')
-    .each(function () {
-      var id = $(this).attr('id');
-      if (id) {
-        var anchor = document.createElement('a');
-        anchor.className = 'header-link';
-        anchor.href = '#' + id;
-        anchor.innerHTML = '<span class="sr-only">Permalink</span><i class="fa fa-link"></i>';
-        anchor.title = 'Permalink';
-        $(this).append(anchor);
-      }
-    });
-
   // Lazy Loading
   lozad().observe();
 
   // Change masthead style when scrolling
-  $(window).on('scroll', function () {
+  function refreshScrollPosition() {
     $(window).scrollTop() > 50
       ? $('.masthead').addClass('masthead_scroll')
       : $('.masthead').removeClass('masthead_scroll');
+  }
+  $(window).on('scroll', function () {
+    refreshScrollPosition();
   });
+  refreshScrollPosition();
 });
