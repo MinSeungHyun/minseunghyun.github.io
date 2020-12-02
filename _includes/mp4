@@ -1,5 +1,10 @@
 {% assign max_width = include.max_width %}
+{% assign center = include.center %}
 
-<video class="align-center lozad" autoplay loop muted style="display: unset; max-width: {% if max_width %}{{ max_width}} {% else %}100%{% endif %}">
+
+<video class="align-center lozad" autoplay loop muted 
+  style="{% if center != true %} display: unset; {% endif %} 
+  max-width: {% if max_width %}{{ max_width }} {% else %}100%{% endif %}">
+
   <source data-src="{{ include.src }}" type="video/mp4">
 </video>
