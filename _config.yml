@@ -20,8 +20,8 @@ title: 'seunghyun.in'
 title_separator: '|'
 subtitle: '.in'
 name: '민승현'
-description: '한 분야에서 만큼은 최고가 되고자 노력하는 안드로이드 개발자 민승현입니다.'
-url: 'https://minseunghyun.github.io'
+description: 'Android Development'
+url: 'https://seunghyun.in'
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: 'MinSeungHyun/MinSeungHyun.github.io'
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
