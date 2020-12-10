@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name: 'Min Seung-hyun'
-  avatar: '/assets/images/my_name.png'
+  avatar: 'https://avatars2.githubusercontent.com/u/44062683?s=460&u=ec83def9ef2b82ed349ccbb628566ffec37d780d&v=4'
   bio: '한 분야에서 만큼은 최고가 되고자 노력하는 안드로이드 개발자 민승현입니다.'
   location: '대한민국'
   email: # "asdf014563@naver.com"
