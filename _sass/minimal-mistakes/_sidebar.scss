@@ -86,6 +86,23 @@
   }
 }
 
+.sidebar__left {
+  @extend .sidebar__right;
+  @include breakpoint($large) {
+    margin-right: unset;
+    margin-left: -1 * $right-sidebar-width-narrow;
+    padding-left: unset;
+    padding-right: 1em;
+    &.sticky {
+      float: left;
+    }
+  }
+  @include breakpoint($x-large) {
+    width: $right-sidebar-width;
+    margin-left: -1 * $right-sidebar-width;
+  }
+}
+
 .splash .sidebar__right {
   @include breakpoint($large) {
     position: relative;
