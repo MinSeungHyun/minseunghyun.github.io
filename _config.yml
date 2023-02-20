@@ -99,10 +99,7 @@ social:
 
 # Analytics
 analytics:
-  provider: 'google'
-  google:
-    tracking_id: 'UA-156512055-1'
-    anonymize_ip: false
+  provider: 'google-gtag'
 
 # Site Author
 author:
