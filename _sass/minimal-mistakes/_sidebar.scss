@@ -26,10 +26,11 @@
     }
     &.sticky {
       overflow-y: auto;
-      /* calculate height of nav list
-         viewport height - nav height - masthead x-padding
-      */
-      height: calc(100vh - #{$nav-height} - 2em);
+      // /* calculate height of nav list
+      //    viewport height - nav height - masthead x-padding
+      // */
+      // height: calc(100vh - #{$nav-height} - 2em);
+      height: 100vh;
     }
   }
   @include breakpoint($x-large) {
