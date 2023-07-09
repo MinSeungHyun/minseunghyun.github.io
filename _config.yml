@@ -15,12 +15,12 @@ remote_theme: 'mmistakes/minimal-mistakes'
 minimal_mistakes_skin: 'air'
 
 # Site Settings
-locale: 'ko-KR'
+locale: 'en-US'
 title: 'seunghyun.in'
 title_separator: '|'
 subtitle: '.in'
-name: '민승현'
-description: 'Android Development'
+name: 'Seunghyun Min'
+description: "Seunghyun's Blog & Portfolio"
 url: 'https://seunghyun.in'
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: 'MinSeungHyun/MinSeungHyun.github.io'
@@ -103,15 +103,24 @@ analytics:
 
 # Site Author
 author:
-  name: 'Min Seung-hyun'
+  name: 'Seunghyun Min'
   avatar: 'https://avatars2.githubusercontent.com/u/44062683?s=460&u=ec83def9ef2b82ed349ccbb628566ffec37d780d&v=4'
-  bio: ''
-  location: '대한민국'
-  email: # "asdf014563@naver.com"
+  bio: |
+    <span>Software Developer at [Sendtime](https://sendtime.app){:target="\_blank"}, [Space](https://sendspace.app){:target="\_blank"}</span>
+    <span>Founder at [Silgam](https://silgam.app){:target="\_blank"}</span>
+    <span>I code to make what I want</span>
+  location: 'Seoul, South Korea'
+  email: # 'i@seunghyun.in'
   links:
-    - label: 'Email'
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'https://github.com/MinSeungHyun'
+    - label: 'LinkedIn'
+      icon: 'fab fa-fw fa-linkedin'
+      url: 'https://www.linkedin.com/in/seunghyunmin'
+    - label: 'Email: i@seunghyun.in'
       icon: 'fas fa-fw fa-envelope-square'
-      url: mailto:contact@seunghyun.in
+      url: mailto:i@seunghyun.in
     - label: 'Website'
       icon: 'fas fa-fw fa-link'
       # url: "https://your-website.com"
@@ -120,10 +129,7 @@ author:
       # url: "https://twitter.com/"
     - label: 'Facebook'
       icon: 'fab fa-fw fa-facebook-square'
-      url: 'https://www.facebook.com/profile.php?id=100016068820153'
-    - label: 'GitHub'
-      icon: 'fab fa-fw fa-github'
-      url: 'https://github.com/MinSeungHyun'
+      # url: 'https://www.facebook.com/profile.php?id=100016068820153'
     - label: 'Instagram'
       icon: 'fab fa-fw fa-instagram'
       # url: "https://instagram.com/"
@@ -131,24 +137,27 @@ author:
 # Site Footer
 footer:
   links:
-    - label: 'Twitter'
-      icon: 'fab fa-fw fa-twitter-square'
-      # url:
-    - label: 'Facebook'
-      icon: 'fab fa-fw fa-facebook-square'
-      url: 'https://www.facebook.com/profile.php?id=100016068820153'
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github'
       url: 'https://github.com/MinSeungHyun'
-    - label: 'GitLab'
-      icon: 'fab fa-fw fa-gitlab'
-      # url:
-    - label: 'Bitbucket'
-      icon: 'fab fa-fw fa-bitbucket'
-      # url:
+    - label: 'LinkedIn'
+      icon: 'fab fa-fw fa-linkedin'
+      url: 'https://www.linkedin.com/in/seunghyunmin'
+    - label: 'Email: i@seunghyun.in'
+      icon: 'fas fa-fw fa-envelope-square'
+      url: mailto:i@seunghyun.in
+    - label: 'Website'
+      icon: 'fas fa-fw fa-link'
+      # url: "https://your-website.com"
+    - label: 'Twitter'
+      icon: 'fab fa-fw fa-twitter-square'
+      # url: "https://twitter.com/"
+    - label: 'Facebook'
+      icon: 'fab fa-fw fa-facebook-square'
+      # url: 'https://www.facebook.com/profile.php?id=100016068820153'
     - label: 'Instagram'
       icon: 'fab fa-fw fa-instagram'
-      # url:
+      # url: "https://instagram.com/"
 
 # Reading Files
 include:

@@ -152,7 +152,6 @@
   }
   a {
     color: inherit;
-    text-decoration: none;
   }
 }
 
@@ -174,6 +173,13 @@
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 1.1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
   }
 }
 
